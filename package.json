@@ -1,5 +1,5 @@
 {
-    "name": "blu-vc-channeladmin",
+    "name": "vcChannelAdmin",
     "version": "1.0.0",
     "description": "Automatically blocks users when they join your voice channel by simulating button clicks on bot messages",
     "main": "index.tsx",

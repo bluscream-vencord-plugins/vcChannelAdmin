@@ -255,12 +255,18 @@ function handleVoiceStateUpdate(voiceStates: VoiceState[]) {
     }
 }
 
+import { Logger } from "@utils/Logger";
+
+const pluginId = "vcChannelAdmin";
+const pluginName = "VC Channel Admin";
+const logger = new Logger(pluginName, "#7289da");
+
 export default definePlugin({
-    name: "Blu VC Channel Admin",
+    name: pluginName,
     description:
         "Automatically blocks users when they join your voice channel by simulating button clicks on bot messages",
     authors: [
-        { name: "Bluscream", id: 0n },
+        { name: "Bluscream", id: 467777925790564352n },
         { name: "Cursor.AI", id: 0n },
     ],
 
