@@ -1,8 +1,9 @@
-/*
- * Vencord, a Discord client mod
- * Copyright (c) 2024 Vendicated and contributors
- * SPDX-License-Identifier: GPL-3.0-or-later
- */
+export const pluginInfo = {
+    id: "vcChannelAdmin",
+    name: "VC Channel Admin",
+    description: "Automatically blocks users when they join your voice channel by simulating button clicks on bot messages",
+    color: "#7289da"
+};
 
 import { definePluginSettings } from "@api/Settings";
 import { Devs } from "@utils/constants";
@@ -257,12 +258,10 @@ function handleVoiceStateUpdate(voiceStates: VoiceState[]) {
 
 import { Logger } from "@utils/Logger";
 
-const pluginId = "vcChannelAdmin";
-const pluginName = "VC Channel Admin";
-const logger = new Logger(pluginName, "#7289da");
+const logger = new Logger(pluginInfo.name, pluginInfo.color);
 
 export default definePlugin({
-    name: pluginName,
+    name: "VC Channel Admin",
     description:
         "Automatically blocks users when they join your voice channel by simulating button clicks on bot messages",
     authors: [
