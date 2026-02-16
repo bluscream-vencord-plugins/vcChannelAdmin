@@ -16,18 +16,8 @@ import { Logger } from "@utils/Logger";
 import { settings } from "./settings";
 // endregion Imports
 
-// region PluginInfo
-export const pluginInfo = {
-    id: "voiceChannelAdmin",
-    name: "VoiceChannelAdmin",
-    description: "Automatically blocks users when they join your voice channel by simulating button clicks on bot messages",
-    color: "#7289da",
-    authors: [
-        { name: "Bluscream", id: 467777925790564352n },
-        { name: "Assistant", id: 0n }
-    ],
-};
-// endregion PluginInfo
+import { pluginInfo } from "./info";
+export { pluginInfo };
 
 // region Variables
 const logger = new Logger(pluginInfo.id, pluginInfo.color);
